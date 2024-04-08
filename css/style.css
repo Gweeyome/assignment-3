@@ -57,7 +57,7 @@ section {
 }
 
 #hero {
-    background-image: url(/images/hands-typing.jpg);
+    background-image: url(../images/hands-typing.jpg);
     height: 600px;
     background-size: cover;
     filter:grayscale(70%);
