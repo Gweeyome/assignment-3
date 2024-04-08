@@ -1,0 +1,166 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+
+header, footer{
+    background-color: #000;
+    color:#fff;
+
+}
+
+nav ul {
+     display: flex;
+     gap: 20px;
+     list-style: none;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+header a:link,
+header a:visited {
+color: #fff;
+text-decoration: none;
+}
+
+  header a:hover, 
+  header a:focus {
+    text-decoration: underline;
+  }
+
+section {
+
+    background-color: #fafafa;
+    padding: 2em 0;
+}
+
+#hero {
+    background-image: url(/images/hands-typing.jpg);
+    height: 600px;
+    background-size: cover;
+    filter:grayscale(70%);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#hero h1 {
+    max-width: 60%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 50%);
+    text-shadow: 4px 4px #000;
+   
+}
+
+.intro-grid{
+display: grid;
+grid-template-columns: 2fr 1fr;
+align-items:center;
+}
+
+.service-grid{
+    padding-top: 2em;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.25em;
+
+}
+
+.service-grid article {
+    background-color:#fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service-grid article h3 {
+    text-align: center; 
+}
+
+.service-grid article p {
+    margin-bottom: 1em; 
+}
+
+.service-grid article .btn {
+    margin-top: auto; 
+    padding: 0.5em 1em;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    text-decoration: none;
+    text-align: center; 
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.service-grid article .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#work {
+    background-color: #fafafa;
+}
+
+#work h2 {
+    text-align: center; 
+    max-width: 100%; 
+    margin-bottom: 1em; 
+}
+
+.work-gallery{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "div1 div1 div1 div2 div2 div2" "div3 div3 div4 div4 div5 div5";
+}
+
+.work-gallery img:nth-child(1){
+    grid-area: div1;
+}
+
+.work-gallery img:nth-child(2){
+    grid-area: div2;
+}
+
+.work-gallery img:nth-child(3){
+    grid-area: div3;
+}
+
+.work-gallery img:nth-child(4){
+    grid-area: div4;
+}
+
+.work-gallery img:nth-child(5){
+    grid-area: div5;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center; 
+    padding: 1em 0; 
+}
